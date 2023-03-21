@@ -1,0 +1,78 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[4]:
+
+import datetime
+
+import pandas as pd
+
+import seaborn as snd 
+
+import matplotlib as plt
+
+import numpy as np
+
+#In[11]
+
+
+last_active='last active'
+print(last_active)
+
+print()
+
+now = datetime.datetime.now()
+
+print(now)
+
+
+MarySA = pd.ExcelFile("C:/Users/50763/Downloads/Analisis 2,03.xlsx")
+
+data_frames = {}
+for sheet_name in MarySA.sheet_names:
+    data_frames[sheet_name] = MarySA.parse(sheet_name)
+
+# ahora puedes acceder a cada hoja de trabajo como un objeto de DataFrame en el diccionario
+informe1 = (' Informe 1')
+print(informe1)
+
+print(data_frames['Informe1'])
+######################################
+informe2 = (' Informe 2')
+print(informe2)
+
+print(data_frames['Informe2'])
+######################################
+
+informe3 = (' Informe 3')
+print(informe3)
+
+print(data_frames['Informe3'])
+######################################
+
+informe4 = (' Informe 4')
+print(informe4)
+print(data_frames['Informe4'])
+######################################
+
+informe5 = (' Informe 5')
+print(informe5)
+print(data_frames['Informe5'])
+
+######################################
+
+informe6 = (' Informe 6')
+print(informe6)
+print(data_frames['Informe6'])
+######################################
+
+informe7 = (' Informe 7')
+print(informe7)
+print(data_frames['Informe7'])
+######################################
+
+informe8 = (' Informe 8')
+print(informe8)
+
+print(data_frames['Informe8'])
+######################################
